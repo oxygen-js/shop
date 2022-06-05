@@ -1,0 +1,41 @@
+:host {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .logo {
+      .name {
+        font-size: 26px;
+        font-weight: 700;
+      }
+    }
+  
+    .menu {
+     
+      .menu_block {
+        display: flex;
+        align-items: center;
+        list-style: none;
+  
+        .menu_item {
+          margin: 0 40px;
+        }
+  
+        .menu_other_links {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+  
+          li {
+            margin: 0 10px;
+          }
+        }
+      }
+  
+    }
+  }
+  
