@@ -1,0 +1,21 @@
+<div class="container">
+
+    <input class="search" type="search" placeholder="Search...">
+
+
+    <!-- <div class="filters">
+        filters
+    </div> -->
+
+    <hr>
+
+    <div class="products">
+        <h2>Products</h2>
+        <app-shop-card *ngFor="let item of mokeData"
+            [id]="item.id"
+            [title]="item.title"
+            [imgUrl]="item.imgUrl"
+            [description]="item.description"
+            [price]="item.price"></app-shop-card>
+    </div>
+</div>
