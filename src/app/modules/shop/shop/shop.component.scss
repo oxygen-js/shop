@@ -1,0 +1,21 @@
+:host {
+    .search {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .filters {
+        font-style: italic;
+        margin: 20px 0;
+    } 
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            width: 180px;
+            padding: 10px;
+        }
+    }
+}
