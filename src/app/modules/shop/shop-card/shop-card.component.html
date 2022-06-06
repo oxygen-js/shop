@@ -1,19 +1,12 @@
 <img class="img" [src]="imgUrl" alt="Image product">
 
+<a class="title" [routerLink]="id">{{title}}</a>
 
-<a class="title" [routerLink]="">{{title}}</a>
+<div class="desc">{{description}}</div>
 
-
-<div class="desc">
-    {{description}}
-</div>
-
-<div class="price">
-    ${{price}}
-</div>
-
+<div class="price">${{price}}</div>
 
 <div class="actions">
-    <button>-_-</button>
-    <button>+</button>
+    <button (click)="go()">-_-</button>
+    <button (click)="add()">+</button>
 </div>
