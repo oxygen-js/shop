@@ -9,15 +9,19 @@ import { ProductDto } from '../models/product.dto';
 export class ShopHomeComponent implements OnInit {
 
   get mokeData(): ProductDto[] {
-    return [
-      {
-        id: '1',
-        title: "Product #1",
-        description: "Proin auctor urna nec dictum sollicitudin.",
-        price: 1000.10,
-        imgUrl: 'https://100fon.ru/upload/iblock/55f/55f6aca5f3e8f08d36a9d57b59256371.jpg'
-      }
-    ]
+    const result = [];
+    for (let i = 1; i < 40; i++) {
+      result.push(
+        {
+          id: `${i}`,
+          title: `Product #${i}`,
+          description: "Proin auctor urna nec dictum sollicitudin.",
+          price: +(1000.10 * i).toFixed(2),
+          imgUrl: 'https://100fon.ru/upload/iblock/55f/55f6aca5f3e8f08d36a9d57b59256371.jpg'
+        }
+      );
+    }
+    return result;
   }
 
   constructor() { }

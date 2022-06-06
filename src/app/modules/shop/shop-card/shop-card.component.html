@@ -1,18 +1,19 @@
-<div class="img">
-    <img [src]="imgUrl" alt="Image product">
-</div>
+<img class="img" [src]="imgUrl" alt="Image product">
 
-<div class="title">
-    {{title}}
-</div>
+
+<a class="title" [routerLink]="">{{title}}</a>
+
 
 <div class="desc">
     {{description}}
 </div>
 
 <div class="price">
-    {{price}}
+    ${{price}}
 </div>
 
-<button>View</button>
-<button>+</button>
+
+<div class="actions">
+    <button>-_-</button>
+    <button>+</button>
+</div>
